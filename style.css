@@ -86,9 +86,10 @@ div#contact-page{
     justify-content: space-around;
 }
 
-div#passport-1:hover{
+.open{
     transform: rotateY(-180deg);
     opacity: 0.5;
+    z-index: 1;
 }
 div#passport-2{
     display: flex;
@@ -139,24 +140,23 @@ div#my-tech{
 div#my-tech>div{
     position: relative;
     width: 32vw;
-    font-size: 20%;
+    font-size: 0.8rem;
 }
 div.tech-category{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
 }
-div#my-tech>div>img{
+div.tech-category>img{
     position: absolute;
     left: 0;
     transform-origin: (-50%,-50%);
     transform: translateY(0);
 }
 div#my-tech>div>h1{
-    text-align: center;
-    z-index: 4;
-    color: rgb(0, 85, 154);
+    font-size: 1.5rem;
+
 }
 
 div.gaze-bar{
