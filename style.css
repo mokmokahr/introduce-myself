@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    font-size: 2vw;
+}
+
+div.pages{
+    font-family: 'KBO-Dia-Gothic_bold';
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#title-page{
+    background-image: url("https://blog.kakaocdn.net/dn/0XT4K/btrax79g1kk/bWUseGA5S1bo65sKAiYt20/img.jpg");
+    background-size:100vw 100vh ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+div#introduce-page{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div#passport{
+    color: yellow;
+    width: 35vw;
+    height: 45vw;
+    margin-left: 35vw;
+    perspective: 1500px;
+}
+div.passport-pages{
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div#passport-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(0, 79, 13);
+    z-index: 1;
+    transform-origin:left;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+div#contact-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div#passport-1:hover{
+    transform: rotateY(-180deg);
+    opacity: 0.5;
+}
+div#passport-2{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SUITE-Regular';
+    background-color: rgb(233, 233, 233);
+    color: black;
+    z-index: 0;
+}
+div#passport-2>div>p{
+    text-align: left;
+}
+div#sky-img-wrapper{
+    border-radius: 3rem;
+    width: 50vh;
+    height: 50vh;
+    background-size: 500px 500px;
+    background-image: url("https://blog.kakaocdn.net/dn/0XT4K/btrax79g1kk/bWUseGA5S1bo65sKAiYt20/img.jpg");
+}
+
+img#airplane{
+    animation: flyAirplain 2s;
+    animation-iteration-count: 1;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(30%,0%);
+    z-index: -1;
+}
+div#intro-page-title{
+    color: black;
+}
+
+div#tech-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    height: 200vh;
+}
+div#my-tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+}
+div#my-tech>div{
+    position: relative;
+    width: 32vw;
+    font-size: 20%;
+}
+div.tech-category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+div#my-tech>div>img{
+    position: absolute;
+    left: 0;
+    transform-origin: (-50%,-50%);
+    transform: translateY(0);
+}
+div#my-tech>div>h1{
+    text-align: center;
+    z-index: 4;
+    color: rgb(0, 85, 154);
+}
+
+div.gaze-bar{
+    height: 5vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+div.gaze-bar>img{
+    width: 3vw;
+}
+
+div#project-page{
+    background-color: rgb(255, 255, 255);
+}
+div#my-tech-title>h1{
+    font-size: 1.5rem;
+    color: rgb(0, 85, 154);
+    z-index: 3;
+}
+
+img.window-img{
+    position: absolute;
+    height: 100vh;
+}
+img.window-tech{
+    width: 32vw;
+    z-index: 4;
+}
+
+div#contact-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+
+img.icon{
+    width: 10vw;
+    height: 10vw;
+}
+
+div#icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+div#gradient-to-bottom{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+div#gradient-to-top{
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+
+
+
+@keyframes flyAirplain{
+    from{
+        transform:translate(-270%,100%);
+    }
+    to{
+        transform: translate(30%,0%);
+    }
+}
